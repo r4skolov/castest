@@ -150,8 +150,56 @@
 			</div>
 		</footer>
 	</div>
-
+	<div id="success" class="modal" aria-hidden="true">
+		<div tabindex="1" class="modal__overlay" data-micromodal-close>
+			<div role="dialog" class="modal__container modal__container--system">
+				<div class="modal__wrapper modal__wrapper--system">
+					<div class="system-popup">
+						<div class="system-popup__text">
+							You must be at least 21 years of age to access this site. By clicking the “Login” button, you
+							confirm that you are at least 21 years of age.
+						</div>
+						<div class="system-popup__btn">
+							<button type="button" class="b-btn b-btn--default" data-modal-open="test">
+								YES
+							</button>
+							<button type="button" class="b-btn b-btn--default">
+								NO
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal__bg" aria-hidden="true" data-modal-close="success"></div>
+		</div>
+	</div>
+	<div id="test" class="modal" aria-hidden="true">
+		<div tabindex="-1" class="modal__overlay" data-micromodal-close>
+			<div role="dialog" class="modal__container modal__container--system">
+				<div class="modal__wrapper modal__wrapper--system">
+					<div class="system-popup">
+						<div class="system-popup__text">
+							Please note that our website uses cookies to improve our services and personalize your
+							experience.
+							We use cookies to store your preferences, analyze traffic, and ensure the security and
+							functioning of our website.
+						</div>
+						<div class="system-popup__btn">
+							<button type="button" class="b-btn b-btn--default" data-modal-close="test">
+								Read more
+							</button>
+							<button type="button" class="b-btn b-btn--default" data-modal-close="test">
+								Accept
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal__bg" aria-hidden="true" data-modal-close="test"></div>
+		</div>
+	</div>
 	<script src="js/app.min.js"></script>
+
 </body>
 
 </html>
